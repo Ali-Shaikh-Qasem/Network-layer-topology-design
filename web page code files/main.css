@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-image: url('background.jpg'); /* Blue-themed background image */
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif; /* Consistent font */
+}
+
+/* Header */
+header {
+    overflow: hidden;
+    background-color: rgba(45, 41, 41, 0.8); /* Semi-transparent background */
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Welcome Message */
+h1.welcome {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 3rem; /* Larger font size for prominence */
+    margin-bottom: 50px; /* Space below the welcome message */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for depth */
+}
+
+h1 span {
+    color: #e34326; /* Tomato red for emphasis */
+}
+
+/* Articles Container */
+.articles {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow articles to wrap to next line */
+    justify-content: center; /* Center articles horizontally */
+    gap: 20px; /* Space between articles */
+    padding: 20px; /* Add padding around the articles */
+}
+
+/* Individual Article */
+article {
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+    padding: 30px 20px; /* Added padding to compensate for removed images */
+    text-align: center; /* Center align the text in each article */
+    width: calc(100% - 40px); /* Adjust width to be responsive */
+    max-width: 400px; /* Limit the maximum width */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition on hover */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Background Colors for Each Article */
+article:nth-child(1) {
+    background: #4d8e7e; /* Soft Peach */
+}
+
+article:nth-child(2) {
+    background: #4a91ad; /* Light Sky Blue */
+}
+
+article:nth-child(3) {
+    background: #5a82b9; /* Pale Gold */
+}
+
+article:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #333; /* Darken background color on hover */
+}
+
+.article-body h1 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Slightly smaller font size for better fit */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+.article-body ul {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff; /* White text for contrast */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
